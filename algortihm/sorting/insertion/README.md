@@ -55,7 +55,3 @@ Insertion sort has the following time and space complexity:
 - **Space Complexity**: Insertion sort has a space complexity of O(1) because it sorts the array in-place without requiring additional memory allocation for data structures.
 
 It's important to note that insertion sort is efficient for small datasets or partially sorted data, but for larger datasets, more efficient sorting algorithms like merge sort or quicksort are often preferred.
-
-### Stability
-
-Insertion sort is stable, meaning that it preserves the relative order of equal elements in the sorted array. This can be an important feature in certain applications.
