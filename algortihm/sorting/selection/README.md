@@ -54,3 +54,13 @@ Array: [2, 3, 4, 5, 6, 7, 8, 9, 15].
 ### Sorted Array
 
 The selection sort algorithm has sorted the array in ascending order: [2, 3, 4, 5, 6, 7, 8, 9, 15].
+
+## Complexity Analysis
+
+The selection sort algorithm has the following time and space complexity:
+
+- **Time Complexity**: Selection sort has a time complexity of O(n^2) in the worst-case scenario. This means that its performance degrades significantly as the size of the input array (n) increases. It compares and swaps elements in a quadratic manner.
+
+- **Space Complexity**: Selection sort has a space complexity of O(1) because it performs sorting in-place, without requiring additional memory allocation for data structures like arrays.
+
+It's important to note that while selection sort is simple to implement, it is not the most efficient sorting algorithm, especially for large datasets. For better performance with larger arrays, consider using more efficient sorting algorithms like merge sort or quicksort.
