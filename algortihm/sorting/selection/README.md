@@ -1,15 +1,56 @@
-# Selection Sort Algorithm
+## Selection Sort Algorithm Example
 
-### The Selection Sort algorithm works as follows:
+Let's walk through the selection sort algorithm step by step using the array: [7, 3, 5, 8, 2, 9, 4, 15, 6].
 
----
+### Initial Array
 
-- Start by selecting the first element of the array.
-- Search for the smallest element among the remaining elements in the array.
-- When the smallest element is found, swap it with the first element.
-- Move on to the second element of the array and repeat steps 2 and 3 to find the second smallest element, swapping it
-with  the second element.
-- Continue this process for the remaining elements in the array until the entire array is sorted.
+Our unsorted array is: [7, 3, 5, 8, 2, 9, 4, 15, 6].
 
-If this process is repeated for all elements in the array, the array will be sorted in ascending order.
+### Step 1
 
+1. Start with the first element, which is 7.
+2. Find the smallest element among the remaining elements: 2 (at index 4).
+3. Swap 7 and 2.
+4. The array now looks like this: [2, 3, 5, 8, 7, 9, 4, 15, 6].
+
+### Step 2
+
+1. Move to the second element, which is 3.
+2. Find the smallest element among the remaining elements: 3.
+3. Swap 3 with itself (no change).
+4. The array remains: [2, 3, 5, 8, 7, 9, 4, 15, 6].
+
+### Step 3
+
+1. Move to the third element, which is 5.
+2. Find the smallest element among the remaining elements: 4 (at index 6).
+3. Swap 5 and 4.
+4. The array becomes: [2, 3, 4, 8, 7, 9, 5, 15, 6].
+
+### Continue Steps 4-8
+
+Continue these steps for the rest of the elements in the array, until the entire array is sorted:
+
+### Step 4
+
+Array: [2, 3, 4, 8, 7, 9, 5, 15, 6].
+
+### Step 5
+
+Array: [2, 3, 4, 5, 7, 9, 8, 15, 6].
+
+### Step 6
+
+Array: [2, 3, 4, 5, 6, 9, 8, 15, 7].
+
+### Step 7
+
+Array: [2, 3, 4, 5, 6, 7, 8, 15, 9].
+
+### Step 8
+
+Array: [2, 3, 4, 5, 6, 7, 8, 9, 15].
+
+### Sorted Array
+
+The selection sort algorithm has sorted the array in ascending order: [2, 3, 4, 5, 6, 7, 8, 9, 15].
