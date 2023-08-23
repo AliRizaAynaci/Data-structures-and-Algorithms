@@ -2,8 +2,7 @@ package algortihm.sorting.insertion;
 
 public class InsertionSort {
 
-    public static void insertionSort(int[] arr) {
-        int n = arr.length;
+    public static void insertionSort(int[] arr, int n) {
 
         for (int i = 1; i < n; i++) {
             int temp = arr[i];
@@ -20,12 +19,14 @@ public class InsertionSort {
     public static void main(String[] args) {
 
         int[] arr = {7, 3, 5, 8, 2, 9, 4, 15, 6};
-        System.out.print("Array: ");
+        int n = arr.length;
+
+        System.out.print("Unsorted Array: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }
 
-        insertionSort(arr);
+        insertionSort(arr, n);
 
         // Sorted Array: 2 3 4 5 6 7 8 9 15
         System.out.print("\n" + "Sorted Array: ");
