@@ -9,7 +9,7 @@ public class InsertionSort {
             int temp = arr[i];
             int j = i - 1;
 
-            while (j >= 0 && arr[j] > temp) {
+            while (j >= 0 && temp < arr[j]) {
                 arr[j + 1] = arr[j];
                 j--;
             }
@@ -20,14 +20,15 @@ public class InsertionSort {
     public static void main(String[] args) {
 
         int[] arr = {7, 3, 5, 8, 2, 9, 4, 15, 6};
-        System.out.print("Dizi: ");
+        System.out.print("Array: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }
 
         insertionSort(arr);
 
-        System.out.print("\n" + "Sirali dizi: ");
+        // Sorted Array: 2 3 4 5 6 7 8 9 15
+        System.out.print("\n" + "Sorted Array: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }

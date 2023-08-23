@@ -1,22 +1,18 @@
-package algortihm.sorting.selection;
+package algortihm.sorting.bubble;
 
-public class SelectionSort {
+public class BubbleSort {
 
-    public static void selectionSort(int[] arr) {
+    public static void bubbleSort(int[] arr) {
         int n = arr.length;
-
+        int temp;
         for (int i = 0; i < n - 1; i++) {
-            int min = arr[n - 1];
-            int index = n - 1;
-
-            for (int j = i; j < (n - 1); j++) {
-                if (arr[j] < min) {
-                    min = arr[j];
-                    index = j;
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
-            arr[index] = arr[i];
-            arr[i] = min;
         }
     }
 
@@ -27,8 +23,8 @@ public class SelectionSort {
         for (int num : arr) {
             System.out.print(num + " ");
         }
-        selectionSort(arr);
 
+        bubbleSort(arr);
         // Sorted Array: 2 3 4 5 6 7 8 9 15
         System.out.print("\n" + "Sorted Array: ");
         for (int num : arr) {
