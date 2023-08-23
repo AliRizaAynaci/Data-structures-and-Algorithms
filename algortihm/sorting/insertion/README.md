@@ -44,7 +44,7 @@ Array: [2, 3, 4, 5, 6, 7, 8, 9, 15].
 
 The insertion sort algorithm has sorted the array in ascending order: [2, 3, 4, 5, 6, 7, 8, 9, 15].
 
-----
+---
 
 ## Complexity Analysis
 
