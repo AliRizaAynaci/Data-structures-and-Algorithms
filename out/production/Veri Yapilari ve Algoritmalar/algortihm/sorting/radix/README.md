@@ -1,23 +1,23 @@
-## Radix Sort Algorithm Example
+# Radix Sort Algorithm Example
 
-Let's walk through the Radix Sort algorithm step by step using the array: [7, 3, 5, 8, 2, 9, 4, 15, 6].
+Let's walk through the Radix Sort algorithm step by step using the array: `[7, 3, 5, 8, 2, 9, 4, 15, 6]`.
 
-### Initial Array
+## Initial Array
 
-Our unsorted array is: [7, 3, 5, 8, 2, 9, 4, 15, 6].
+Our unsorted array is: `[7, 3, 5, 8, 2, 9, 4, 15, 6]`.
 
-### Step 1: Least Significant Digit (LSD) Sort
+## Step 1: Least Significant Digit (LSD) Sort
 
 1. Start by sorting the array based on the least significant digit (rightmost digit).
-    - [2, 3, 4], [5], [6, 15], [7, 8], [9]
+   - `[2, 3, 4]`, `[5]`, `[6, 15]`, `[7, 8]`, `[9]`
 
-### Step 2: Repeat for Other Digits
+## Step 2: Repeat for Other Digits
 
 2. Continue this process for the tens, hundreds, and so on, until all digits are considered. In this case, we're done.
 
-### Sorted Array
+## Sorted Array
 
-The Radix Sort algorithm has sorted the array in ascending order: [2, 3, 4, 5, 6, 7, 8, 9, 15].
+The Radix Sort algorithm has sorted the array in ascending order: `[2, 3, 4, 5, 6, 7, 8, 9, 15]`.
 
 ## Radix Sort Algorithm
 
