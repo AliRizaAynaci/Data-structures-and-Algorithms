@@ -7,7 +7,6 @@ This GitHub repository contains fundamental data structures and algorithms learn
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
 - [Usage](#usage)
-- [Contribution Guide](#contribution-guide)
 
 ## Data Structures
 
@@ -17,9 +16,6 @@ In this section, you will find examples and explanations of data structures incl
 - **Linked List:** Examples and usages of the linked list data structure.
 - **Stack:** Examples and usages of the stack data structure.
 - **Queue:** Examples and usages of the queue data structure.
-- **Tree:** Examples and usages of the tree data structure.
-- **Heap:** Examples and usages of the heap data structure.
-- **Hash Table:** Examples and usages of the hash table data structure.
 
 ## Algorithms
 
@@ -38,19 +34,7 @@ You can run this project in your local Java development environment or IDE by fo
 3. Locate the Java file for the data structure or algorithm you are interested in.
 4. Examine the code and run it to observe the results.
 
-## Contribution Guide
+Example command to run code:
 
-To contribute to this project, follow these steps:
-
-1. **Fork the project repository:** Click the "Fork" button at the top right corner of the repository's page to create your copy.
-
-2. **Create a new branch:** Use this command to create a descriptive branch for your changes: `git checkout -b new-branch-name`.
-
-3. **Make changes and commit:** Implement your changes, commit them with a descriptive title and message: `git commit -m "Description of changes"`.
-
-4. **Push to your repository:** Push your changes to your GitHub fork: `git push origin new-branch-name`.
-
-5. **Create a Pull Request:** Visit the Pull Requests section in the original repository, click "New Pull Request," select your branch, and provide a clear title and description.
-
-Thank you for contributing to this project; your efforts are greatly appreciated.
-
+```bash
+java Veri-yapilari-ve-algoritmalar/algorithm/sorting/insertion/insertionSort.java
