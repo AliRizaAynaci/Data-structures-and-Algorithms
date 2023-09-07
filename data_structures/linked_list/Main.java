@@ -1,8 +1,9 @@
 package data_structures.linked_list;
 
-public class LinkedListApplication {
+public class Main {
 
     public static void main(String[] args) {
+
         // Create a new linked list
         LinkedList linkedList = new LinkedList();
 
@@ -14,6 +15,9 @@ public class LinkedListApplication {
         linkedList.addNode(4);
         linkedList.addNode(5);
         linkedList.addNode(6);
+
+        // Print the first element of linked list
+        System.out.println("First element: " + linkedList.getHead());
 
         // Print the current state of the linked list
         linkedList.printList();
@@ -37,6 +41,11 @@ public class LinkedListApplication {
         // Print the linked list after deletion
         linkedList.printList();
 
+        linkedList.remove(2);
+
+        // Print the linked list after deletion
+        linkedList.printList();
+
         // Get the updated size of the linked list
         System.out.println("Size of the list: " + linkedList.size());
 
@@ -45,6 +54,7 @@ public class LinkedListApplication {
 
         // Clear the linked list
         linkedList.clearList();
+        System.out.println("Linked list cleared");
 
         // Print the cleared linked list
         linkedList.printList();
@@ -54,5 +64,8 @@ public class LinkedListApplication {
 
         // Check if the linked list is empty after clearing
         System.out.println("Is the linked list empty? " + linkedList.isEmpty());
+
+        // Print the first element of linked list
+        System.out.println("First element: " + linkedList.getHead());
     }
 }

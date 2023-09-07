@@ -74,6 +74,45 @@ public class LinkedList {
         return 0;
     }
 
+    // Get the value of the head (first element) of the linked list.
+    public int getHead() {
+        if (head != null) {
+            return head.data;
+        } else {
+            throw new IllegalStateException("The linked list is empty.");
+        }
+    }
+
+    // Delete the node with the specified index if it exists in the linked list.
+    public void remove(int index) {
+        // Check for invalid index or an empty list
+        if (isEmpty() || index < 0) {
+            System.err.println("Invalid index or the list is empty.");
+            return;
+        }
+
+        // If the index is 0, remove the element at the beginning of the list
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+
+        int currIndex = 0;
+        Node currNode = head;
+        while (currIndex < index - 1 && currNode.next != null) {
+            currNode = currNode.next;
+            currIndex++;
+        }
+
+        // Remove the element at the specified index
+        if (currNode.next != null) {
+            currNode.next = currNode.next.next;
+        } else {
+            System.err.println("Index out of bounds.");
+        }
+    }
+
+
     // Delete the first node with the specified value if it exists in the linked list.
     public void deleteNode(int val) {
         if (isEmpty()) return;
@@ -110,7 +149,6 @@ public class LinkedList {
     // Clear the entire linked list, making it empty.
     public void clearList() {
         head = null;
-        System.out.println("Linked list cleared");
     }
 
     // Print the contents of the linked list from the beginning to the end.
