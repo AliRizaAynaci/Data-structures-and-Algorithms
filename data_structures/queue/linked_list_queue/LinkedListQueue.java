@@ -31,6 +31,11 @@ public class LinkedListQueue {
         return front;
     }
 
+    // Retrieves and returns the element at the front of the queue without removing it.
+    public int peek() {
+        return linkedList.getHead();
+    }
+
     // Get the size (number of elements) of the queue.
     public int size() {
         return linkedList.size();

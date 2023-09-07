@@ -21,6 +21,9 @@ public class Main {
         // Check the size of the queue using the size function
         System.out.println("Queue size: " + queue.size()); // 3
 
+        // Print the peeked item from the queue.
+        System.out.println("Peeked item: " + queue.peek());
+
         // Dequeue items from the queue and display the dequeued item
         int dequeuedItem = queue.dequeue();
         System.out.println("Dequeued item: " + dequeuedItem); // Dequeued item: 1
