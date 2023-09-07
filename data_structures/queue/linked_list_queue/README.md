@@ -1,10 +1,10 @@
 # Linked List Queue Class
 
-The `LinkedListQueue` class is an implementation of a queue using a linked list in Java. It provides methods for checking if the queue is empty, enqueuing (adding) elements to the back of the queue, dequeuing (removing and returning) elements from the front of the queue, getting the size of the queue, printing the contents of the queue, and clearing the queue.
+The `LinkedListQueue` class is an implementation of a queue using a linked list in Java. It provides methods for checking if the queue is empty, enqueuing (adding) elements to the back of the queue, dequeuing (removing and returning) elements from the front of the queue, peeking at the element at the front of the queue, getting the size of the queue, printing the contents of the queue, and clearing the queue.
 
 ## Class Structure
 
-The `LinkedListQueue` class uses a `LinkedList` from your previous code as the underlying data structure. It has the following components:
+The `LinkedListQueue` class uses an instance of the `LinkedList` class as the underlying data structure. It has the following components:
 
 - `linkedList`: An instance of the `LinkedList` class used as the basis for the queue.
 
@@ -25,6 +25,10 @@ Enqueues (adds) an element with the given `data` to the back of the queue.
 ### `dequeue() -> int`
 
 Dequeues (removes and returns) an element from the front of the queue. If the queue is empty, it returns -1 and prints an error message.
+
+### `peek() -> int`
+
+Retrieves and returns the element at the front of the queue without removing it.
 
 ### `size() -> int`
 
@@ -51,6 +55,9 @@ myQueue.enqueue(30);
 
 // Dequeue an element from the front of the queue
 int dequeuedItem = myQueue.dequeue(); // Should return 10
+
+// Peek at the front element of the queue
+int frontElement = myQueue.peek(); // Should return 20
 
 // Check if the queue is empty
 boolean isEmpty = myQueue.isEmpty(); // Should return false
