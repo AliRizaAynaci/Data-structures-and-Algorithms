@@ -27,6 +27,7 @@ public class Main {
         linkedList.insertNode(1, 12);
 
         // Print the updated linked list
+        System.out.print("Linked List: ");
         linkedList.printList();
 
         // Find the index of a value in the linked list
@@ -39,11 +40,13 @@ public class Main {
         linkedList.deleteNode(12);
 
         // Print the linked list after deletion
+        System.out.print("Linked List: ");
         linkedList.printList();
 
         linkedList.remove(2);
 
         // Print the linked list after deletion
+        System.out.print("Linked List: ");
         linkedList.printList();
 
         // Get the updated size of the linked list
@@ -57,6 +60,7 @@ public class Main {
         System.out.println("Linked list cleared");
 
         // Print the cleared linked list
+        System.out.print("Linked List: ");
         linkedList.printList();
 
         // Get the size of the cleared linked list
