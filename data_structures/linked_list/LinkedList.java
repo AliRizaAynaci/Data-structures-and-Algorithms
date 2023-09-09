@@ -154,11 +154,37 @@ public class LinkedList {
     // Print the contents of the linked list from the beginning to the end.
     public void printList() {
         Node currNode = head;
-        System.out.print("Linked List: ");
         while (currNode != null) {
             System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
         System.out.println("null");
     }
+
+    // Retrieve an element at a specific index
+    public int get(int index) {
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
+
+        Node currNode = head;
+        int currIndex = 0;
+
+        while (currNode != null) {
+            if (currIndex == index) {
+                return currNode.data;
+            }
+            currNode = currNode.next;
+            currIndex++;
+        }
+
+        // If a specific index is not found, you can either throw an exception or return a default value.
+        // For example, you can throw an exception with:
+        // throw new IndexOutOfBoundsException("Index not found");
+
+        // Alternatively, you can return a default value:
+        // return 0; // Or any other suitable default value
+        return -1; // We've set the default value to -1 in this example.
+    }
+
 }
