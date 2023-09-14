@@ -103,6 +103,37 @@ public class AVLTree {
         return node;
     }
 
+    // Check if the AVL tree is empty
+    public boolean isEmpty() {
+        return root == null;
+    }
+
+    // Find and return the minimum value in the AVL tree
+    public int findMin() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Tree is empty");
+        }
+
+        TreeNode current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.data;
+    }
+
+    // Find and return the maximum value in the AVL tree
+    public int findMax() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Tree is empty");
+        }
+
+        TreeNode current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.data;
+    }
+
     // Search for data in AVL tree
     public boolean search(int data) {
         return searchRec(root, data);
@@ -209,6 +240,20 @@ public class AVLTree {
             inorderRec(node.right);
         }
     }
+
+    // Inorder traversal of the AVL tree in reverse order (right, root, left)
+    public void inorderReverse() {
+        inorderReverseRec(root);
+    }
+
+    private void inorderReverseRec(TreeNode node) {
+        if (node != null) {
+            inorderReverseRec(node.right);
+            System.out.print(node.data + " ");
+            inorderReverseRec(node.left);
+        }
+    }
+
 
     // Preorder traversal of the AVL tree
     public void preorder() {

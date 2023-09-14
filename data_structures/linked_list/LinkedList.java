@@ -132,6 +132,52 @@ public class LinkedList {
         }
     }
 
+    // Swap the data of two nodes at the specified indices.
+    public void swap(int index1, int index2) {
+        if (index1 < 0 || index1 >= size() || index2 < 0 || index2 >= size()) {
+            System.err.println("Invalid indices for swap.");
+            return;
+        }
+
+        Node node1 = head;
+        Node node2 = head;
+        Node prevNode1 = null;
+        Node prevNode2 = null;
+
+        int currentIndex = 0;
+
+        while (currentIndex < index1) {
+            prevNode1 = node1;
+            node1 = node1.next;
+            currentIndex++;
+        }
+
+        currentIndex = 0;
+
+        while (currentIndex < index2) {
+            prevNode2 = node2;
+            node2 = node2.next;
+            currentIndex++;
+        }
+
+        // Swap the nodes
+        if (prevNode1 != null) {
+            prevNode1.next = node2;
+        } else {
+            head = node2;
+        }
+
+        if (prevNode2 != null) {
+            prevNode2.next = node1;
+        } else {
+            head = node1;
+        }
+
+        Node temp = node1.next;
+        node1.next = node2.next;
+        node2.next = temp;
+    }
+
     // Get the number of nodes in the linked list.
     public int size() {
         if (isEmpty()) return 0;
