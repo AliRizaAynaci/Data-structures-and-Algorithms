@@ -1,6 +1,6 @@
 package data_structures.queue.array_queue;
 
-public class ArrayQueue {
+public class ArrayQueue<T> {
 
     private int[] queueArray;
     private int front;
