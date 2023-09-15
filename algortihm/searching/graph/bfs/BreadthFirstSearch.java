@@ -93,11 +93,11 @@ public class BreadthFirstSearch<T> {
         graph.addNode("E");
 
         // Add edges to create a sample graph
-        graph.addEdge("A", "B");
-        graph.addEdge("A", "F");
-        graph.addEdge("F", "C");
-        graph.addEdge("B", "D");
-        graph.addEdge("C", "E");
+        graph.addEdge("A", "B", 1);
+        graph.addEdge("A", "F", 2);
+        graph.addEdge("F", "C", 3);
+        graph.addEdge("B", "D", 4);
+        graph.addEdge("C", "E", 5);
 
         BreadthFirstSearch<String> bfs = new BreadthFirstSearch<>(graph);
         bfs.bfs("A"); // Start BFS from node "A"

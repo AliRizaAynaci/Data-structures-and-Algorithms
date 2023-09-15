@@ -93,10 +93,11 @@ public class DepthFirstSearch<T> {
         graph.addNode("D");
         graph.addNode("E");
 
-        graph.addEdge("A", "B");
-        graph.addEdge("A", "C");
-        graph.addEdge("B", "D");
-        graph.addEdge("C", "E");
+        graph.addEdge("A", "B", 1);
+        graph.addEdge("A", "F", 2);
+        graph.addEdge("F", "C", 3);
+        graph.addEdge("B", "D", 4);
+        graph.addEdge("C", "E", 5);
 
         DepthFirstSearch<String> dfs = new DepthFirstSearch<>(graph);
 
